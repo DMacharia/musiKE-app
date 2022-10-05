@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "../../components/authentication/login";
 import Sidebar from "../../components/sidebar/sidebar";
+import { setClientToken } from "../../spotifyApi";
 import Favourites from "../favourites/favourites";
 import Feed from "../feed/feed";
 import Library from "../library/library";
