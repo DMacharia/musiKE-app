@@ -2,6 +2,7 @@ import React from "react";
 import { loginEndpoint } from "../../spotifyApi";
 import "./login.css";
 
+//login function that redirects user to spotify login page to login their acount
 export default function Login() {
 	return (
 		<div className="login-page">

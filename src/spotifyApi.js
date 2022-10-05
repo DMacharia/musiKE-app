@@ -6,3 +6,4 @@
  export const loginEndpoint = `${authEndpoint}client_id=${clientID}&redirect_uri=${redirectURL}&scope=${scopes.join(
     "%20"
   )}&response_type=token&show_dialog=true`;
+ 
