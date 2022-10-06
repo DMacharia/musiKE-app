@@ -25,31 +25,15 @@ export default function Sidebar() {
 		<div className="sidebar-container">
 			<img src={image} className="profile-img" alt="profile" />
 			<div>
-				<SidebarButtons
-					title="Feed"
-					to="/displays/feed/feed.js"
-					icon={<MdSpaceDashboard />}
-				/>
+				<SidebarButtons title="Library" to="/" icon={<IoLibrary />} />
+				<SidebarButtons title="Feed" to="/feed" icon={<MdSpaceDashboard />} />
 				<SidebarButtons
 					title="Favourites"
-					to="/displays/favourites/favourites.js"
+					to="/favourites"
 					icon={<MdFavorite />}
 				/>
-				<SidebarButtons
-					title="Trending"
-					to="/displays/trending/trending.js"
-					icon={<FaGripfire />}
-				/>
-				<SidebarButtons
-					title="Player"
-					to="/displays/player/player.js"
-					icon={<FaPlay />}
-				/>
-				<SidebarButtons
-					title="Library"
-					to="/displays/library/library.js"
-					icon={<IoLibrary />}
-				/>
+				<SidebarButtons title="Trending" to="/trending" icon={<FaGripfire />} />
+				<SidebarButtons title="Player" to="/player" icon={<FaPlay />} />
 			</div>
 			<SidebarButtons title="Signout" to="" icon={<FaSignOutAlt />} />
 		</div>
