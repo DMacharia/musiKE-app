@@ -11,7 +11,7 @@ export default function Library() {
 	useEffect(() => {
 		APIKit.get("me/playlists").then(function (res) {
 			setPlaylists(res.data.items);
-			console.log(res.data.items);
+			// console.log(res.data.items);
 		});
 	}, []);
     //idea is to go to a new screen(player) upon click of playlist
