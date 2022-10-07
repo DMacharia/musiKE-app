@@ -26,13 +26,11 @@ export default function Sidebar() {
 			<img src={image} className="profile-img" alt="profile" />
 			<div>
 				<SidebarButtons title="Library" to="/" icon={<IoLibrary />} />
-				<SidebarButtons title="Feed" to="/feed" icon={<MdSpaceDashboard />} />
 				<SidebarButtons
 					title="Favourites"
 					to="/favourites"
 					icon={<MdFavorite />}
 				/>
-				<SidebarButtons title="Trending" to="/trending" icon={<FaGripfire />} />
 				<SidebarButtons title="Player" to="/player" icon={<FaPlay />} />
 			</div>
 			<SidebarButtons title="Signout" to="" icon={<FaSignOutAlt />} />

@@ -5,10 +5,8 @@ import Login from "../../components/authentication/login";
 import Sidebar from "../../components/sidebar/sidebar";
 import { setClientToken } from "../../spotifyApi";
 import Favourites from "../favourites/favourites";
-import Feed from "../feed/feed";
 import Library from "../library/library";
 import Player from "../player/player";
-import Trending from "../trending/trending";
 
 export default function Home() {
 	const [token, setToken] = useState(""); //storage of the token state for loggin in
@@ -35,8 +33,6 @@ export default function Home() {
 				<Sidebar />
 				<Routes>
 					<Route path="/" element={<Library />} />
-					<Route path="/feed" element={<Feed />} />
-					<Route path="/trending" element={<Trending />} />
 					<Route path="/player" element={<Player />} />
 					<Route path="/favourites" element={<Favourites />} />
 				</Routes>

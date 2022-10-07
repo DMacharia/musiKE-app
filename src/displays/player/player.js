@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import AudioPlayer from "../../components/audioPlayer/audioPlayer";
+import Queue from "../../components/queue/queue";
+import SongCard from "../../components/songCard/songCard";
 import apiClient from "../../spotifyApi";
+import "./player.css";
 
 export default function Player() {
 	const location = useLocation();
@@ -25,18 +29,18 @@ export default function Player() {
 	}, [currentIndex, tracks]);
 
 	return (
-		<div className="screen-container">
+		<div className="screen-container flex">
 			<div className="left-player-body">
-				<AudioPLayer
+				<Queue tracks={tracks} setCurrentIndex={setCurrentIndex} />
+				<AudioPlayer
 					currentTrack={currentTrack}
 					total={tracks}
 					currentIndex={currentIndex}
 					setCurrentIndex={setCurrentIndex}
 				/>
 			</div>
-			<div className="left-player-body">
+			<div className="right-player-body">
 				<SongCard album={currentTrack?.album} />
-				<Queue tracks={tracks} setCurrentIndex={setCurrentIndex} />
 			</div>
 		</div>
 	);
