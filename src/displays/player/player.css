@@ -6,7 +6,7 @@
 
 .right-player-body {
 	width: 60%;
-	height: 100%;
+	height: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
