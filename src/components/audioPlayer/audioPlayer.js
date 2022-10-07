@@ -18,9 +18,6 @@ export default function AudioPlayer({
 
 	const isReady = useRef(false);
 
-	const { duration } = audioRef.current;
-
-	// const currentPercentage = duration ? (trackProgress / duration) * 100 : 0;
 
 	const startTimer = () => {
 		clearInterval(intervalRef.current);
