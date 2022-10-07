@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Controls, { WaveAnimation } from "./controls.js";
+import Controls from "./controls.js";
 
 export default function AudioPlayer({
 	currentTrack,
@@ -10,6 +10,7 @@ export default function AudioPlayer({
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [trackProgress, setTrackProgress] = useState(0);
 	var audioSrc = total[currentIndex]?.track.preview_url;
+
 
 	const audioRef = useRef(new Audio(total[0]?.track.preview_url));
 
@@ -98,7 +99,6 @@ export default function AudioPlayer({
 				<p className="song-artist">{artists.join(" | ")}</p>
 				<div className="player-right-body flex">
 					<div className="song-duration flex">
-						<WaveAnimation isPlaying={isPlaying} />
 					</div>
 					<Controls
 						isPlaying={isPlaying}
