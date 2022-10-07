@@ -74,13 +74,13 @@ export default function AudioPlayer({
 		};
 	}, []);
 
-	const handleNext = () => {
+	function handleNext(){
 		if (currentIndex < total.length - 1) {
 			setCurrentIndex(currentIndex + 1);
 		} else setCurrentIndex(0);
 	};
 
-	const handlePrev = () => {
+	function handlePrev (){
 		if (currentIndex - 1 < 0) setCurrentIndex(total.length - 1);
 		else setCurrentIndex(currentIndex - 1);
 	};
