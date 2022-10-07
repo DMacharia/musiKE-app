@@ -7,7 +7,7 @@ export default function SongCard({ album }) {
 	});
 
 	return (
-		<div>
+		<div className="album-container">
 			<div className="albumImage flex">
 				<img
 					src={album?.images[0]?.url}
