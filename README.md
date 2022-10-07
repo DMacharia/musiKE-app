@@ -17,6 +17,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <p>MUSIKE is a React Music App that seeks to delivers your spotify library and playlists at the touch of a button. It is your guide to entertainment Bliss</p>
 
+## Take a Tour here:
+
+https://dmacharia.github.io/musiKE-app/
+
 ## ScreenShots
 
 ![MUSIKE!](public/musike.png)
