@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./sidebar.css";
 import SidebarButtons from "./sidebarButton";
 import { MdFavorite } from "react-icons/md";
+import { FaPlay } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
 import { IoLibrary } from "react-icons/io5";
 import apiClient from "../../spotifyApi";
