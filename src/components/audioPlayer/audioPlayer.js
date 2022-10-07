@@ -11,24 +11,21 @@ export default function AudioPlayer({
 	const [trackProgress, setTrackProgress] = useState(0);
 	var audioSrc = total[currentIndex]?.track.preview_url;
 
-
 	const audioRef = useRef(new Audio(total[0]?.track.preview_url));
 
 	const intervalRef = useRef();
 
 	const isReady = useRef(false);
 
-
 	const startTimer = () => {
 		clearInterval(intervalRef.current);
-
 		intervalRef.current = setInterval(() => {
 			if (audioRef.current.ended) {
 				handleNext();
 			} else {
 				setTrackProgress(audioRef.current.currentTime);
 			}
-		}, [1000]);
+		}, [2000]);
 	};
 
 	useEffect(() => {
@@ -74,16 +71,16 @@ export default function AudioPlayer({
 		};
 	}, []);
 
-	function handleNext(){
+	function handleNext() {
 		if (currentIndex < total.length - 1) {
 			setCurrentIndex(currentIndex + 1);
 		} else setCurrentIndex(0);
-	};
+	}
 
-	function handlePrev (){
+	function handlePrev() {
 		if (currentIndex - 1 < 0) setCurrentIndex(total.length - 1);
 		else setCurrentIndex(currentIndex - 1);
-	};
+	}
 
 	const artists = [];
 	currentTrack?.album?.artists.forEach((artist) => {
@@ -95,8 +92,7 @@ export default function AudioPlayer({
 				<p className="song-title">{currentTrack?.name}</p>
 				<p className="song-artist">{artists.join(" | ")}</p>
 				<div className="player-right-body flex">
-					<div className="song-duration flex">
-					</div>
+					<div className="song-duration flex"></div>
 					<Controls
 						isPlaying={isPlaying}
 						setIsPlaying={setIsPlaying}
