@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/musiKE-app/static/css/main.dab2df25.css",
+    "main.js": "/musiKE-app/static/js/main.afb9857d.js",
+    "index.html": "/musiKE-app/index.html",
+    "main.dab2df25.css.map": "/musiKE-app/static/css/main.dab2df25.css.map",
+    "main.afb9857d.js.map": "/musiKE-app/static/js/main.afb9857d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dab2df25.css",
+    "static/js/main.afb9857d.js"
+  ]
+}
