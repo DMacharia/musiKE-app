@@ -41,6 +41,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - JavaScript - which was used to build the functionality of the project
 
+-REACT - A JavaScript library
+
 ## Reference
 
 - W3schools
@@ -116,7 +118,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ## Licence
 
 Copyright (c) [2022] [Daniel Macharia]
@@ -140,4 +141,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [Go Back to the top](#MUSIKE)
-
